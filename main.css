@@ -1,111 +1,125 @@
+/*
+TODO: For the next submission a refactor is needed. Alot of properties are repeated this needs to added to classes.
+TODO: Remove comments after submission. Just cluttering the file.
+TODO: Refactor to use scss instead.
+*/
+
+/* Impotera fonter från google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+/* Denna klass används för att ge de olika delarna på sidan samma padding mot sidorna och en marginal top */
 .container {
   padding: 0 16rem;
   margin-top: 4rem;
 }
 
+/* Denna klass används för skapa en horizontel lista för navigation mellan de
+   olika sidorna. */
 .main-nav__items {
-  padding: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
   list-style-type: none;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
+  align-items: center;
   gap: 3.2rem;
 }
 
+/* Används för att ge varje item i listan sin grund styling. */
 .main-nav__item {
   font-size: 1.4em;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
 }
 
+/* Används för att ta bort den fula lila färgen och underline från en länk */
 .main-nav__link {
   text-decoration: none;
   color: #33323d;
   font-weight: 500;
 }
 
+/* Gör så att när musen är över en länk med denna klass så ändras mus pekaren
+   och en border läggs till under för att makera vilken länk man hoverar. */
 .main-nav__link:hover {
   cursor: pointer;
   border-bottom: 1px solid #33323d;
 }
 
+/* Används för att indikera vilken av sidorna man är på just nu. */
 .main-nav__link--active {
   color: #008b72;
 }
 
+/*
+  Grund styling för footer
+*/
 .footer {
   color: white;
   background-color: #33323d;
 }
 
+/* 
+  Box för att innehålla två listor i footern. 
+*/
 .footer-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  justify-content: space-between; /* Gör så att en av listorna kommer hamna i börjarn
+                                     och en i slutet */
   align-items: center;
 }
 
+/*
+  Horizontel lista.
+*/
 .footer-nav__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
   list-style-type: none;
   gap: 3.2rem;
   padding-left: 0px;
 }
 
+/* Grund styling för navigations listan i footern. */
 .footer-nav__item {
   font-size: 1.2em;
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
+/* En horizontel lista igen.
+*/
 .footer-nav__social-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
   list-style-type: none;
   gap: 3.2rem;
 }
 
+/*
+ Sätter vit färg, tar bort underline.
+*/
 .footer-nav__link {
   color: white;
   text-decoration: none;
 }
 
+/*
+Ändra färg för den aktiva länken.
+*/
 .footer-nav__link--active {
   color: #008b72;
 }
 
+/*
+  Lägger till en border under texten när man hoverar över.
+*/
 .footer-nav__link:hover {
   border-bottom: 1px solid white;
 }
 
+/*
+ Används som en klass för en div som visar en bild som täcker hela bredden.
+*/
 .home-intro__img {
   background-size: cover;
   width: 100%;
@@ -113,20 +127,19 @@
   background-image: url("img/header.jpg");
 }
 
+/* 
+ Wrapper för bilden och text om mig. Flex row gör att de läggs sida vid sida. 
+*/
 .home-about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   margin-top: 4rem;
 }
 
+/*
+ Visar profil bild.
+*/
 .home-about__img {
   background-size: cover;
   background-image: url("/img/profile.jpeg");
@@ -135,34 +148,41 @@
   background-position: center center;
 }
 
+/* Wrapper för texten i about */
 .home-about__content {
   margin-left: 4rem;
   border-top: 1px solid #dcdcde;
   border-bottom: 1px solid #dcdcde;
 }
 
+/* Stylar rubriken i about */
 .home-about__heading {
   font-family: "Ibarra Real Nova", serif;
+  font-weight: 700;
   font-size: 4rem;
 }
 
+/* Stylar texten i about */
 .home-about__text {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
+  font-weight: 500;
   line-height: 3rem;
 }
 
+/* Lite reset */
 html {
-  font-size: 62.5%;
-  -webkit-box-sizing: border-box;
+  font-size: 62.5%; /* Text storklek normalt 16px 62.5% av detta är 10px. 10px är
+                       Lättare att använda när man använder rem */
   box-sizing: border-box;
 }
 
+/* Mer resets */
 body {
-  font-size: 1.6rem;
-  padding: 0px;
-  margin: 0px;
+  font-size: 1.6rem; /* Sätter tillbaka vanliga font-storlken till 16px men rem funkar ändå för
+                        rot element är <html> taggen */
+  padding: 0px; /* Jobbigt att arbeta med stantard padding, alltså nollar jag den. */
+  margin: 0px; /* Samma som ovan fast för margin */
   background-color: #fafafa;
   color: #33323d;
 }
-/*# sourceMappingURL=main.css.map */
