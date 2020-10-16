@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+.container {
+  padding: 0 16rem;
+  margin-top: 4rem;
+}
+
+.main-nav__items {
+  padding: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style-type: none;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  gap: 3.2rem;
+}
+
+.main-nav__item {
+  font-size: 1.4em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.main-nav__link {
+  text-decoration: none;
+  color: #33323d;
+  font-weight: 500;
+}
+
+.main-nav__link:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #33323d;
+}
+
+.main-nav__link--active {
+  color: #008b72;
+}
+
+.footer {
+  color: white;
+  background-color: #33323d;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer-nav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 3.2rem;
+  padding-left: 0px;
+}
+
+.footer-nav__item {
+  font-size: 1.2em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.footer-nav__social-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 3.2rem;
+}
+
+.footer-nav__link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav__link--active {
+  color: #008b72;
+}
+
+.footer-nav__link:hover {
+  border-bottom: 1px solid white;
+}
+
+.home-intro__img {
+  background-size: cover;
+  width: 100%;
+  height: 38rem;
+  background-image: url("img/header.jpg");
+}
+
+.home-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  margin-top: 4rem;
+}
+
+.home-about__img {
+  background-size: cover;
+  background-image: url("/img/profile.jpeg");
+  width: 180rem;
+  height: 40rem;
+  background-position: center center;
+}
+
+.home-about__content {
+  margin-left: 4rem;
+  border-top: 1px solid #dcdcde;
+  border-bottom: 1px solid #dcdcde;
+}
+
+.home-about__heading {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 4rem;
+}
+
+.home-about__text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  padding: 0px;
+  margin: 0px;
+  background-color: #fafafa;
+  color: #33323d;
+}
+/*# sourceMappingURL=main.css.map */
