@@ -36,3 +36,75 @@ Olika betygs nivåer:
 - Kunnat placera era länkar och sätta en bakrundsfärg och text färg.
 - Använda er av `<div class>`i er html kod och koppla det till er CSS.
 - Skriva förklaring av ert arbete i er kod. Skriv antingen direkt i koden med kommentarer eller lämna in text dokument som förklarar.
+
+**Examina inlämning 2**
+
+Inlämning 23/10
+
+**Skapa portfolio**
+
+Till er nu befintliga profilsida ska ni nu bygga en portfolio sida där
+ni ska kunna lägga in era kommande projekt.
+
+Från profil sidan ska ni ha skapat en &lt;a href&gt; länk som ska peka
+till en annan html fil där er portfolio nu ska skapas.
+
+Hur ni bygger er portfolio bestämmer ni själva, men nedan delar och
+moment måste genomföras för att få G eller VG.
+
+**OBS!**
+
+**Uppgifter som lämnas in sent för rättning kan enbart få betyg G.
+Uppgifter som inte blir godkända vid första inlämning men kompletteras
+kan även bara få betyget G.**
+
+**Krav för G**
+
+Dessa kriterier nedan måste vara med för att uppgiften ska bli bedömd
+som **Godkänd**:
+
+-   I er portfolio ska ni använda en bakgrund som täcker hela eller
+    delar av sidan, antingen en färg eller bild.
+
+-   Ni ska även göra plats för era kommande projekt med att använda er
+    av CSS Grid för att ställa upp era projekt i olika sektioner på
+    sidan.
+
+-   I detta vill jag även att ni har tanke på att få med flex box för
+    att ställa upp era projekt eller bilder ni använder.
+
+-   Sidan ska vara responsivt, så om den skulle öppnas i mobil läge ska
+    allt innehåll gå att skala ner till att passa skärmen.
+
+-   Visa på användning av att kunna versions hantera er kod i GitHub med
+    att skapa ett repository och pusha upp ny kod.
+
+-   Påbörja skapa en länk på er portfolio som ska gå till ert kommande
+    webb projekt. Antingen en text länk eller en bild eller annat
+    valfritt.
+
+**Krav för VG**
+
+Dessa kriterier nedan måste vara med för att uppgiften ska bli bedömd
+som **Väl Godkänd**:
+
+-   Visa ni kan skapa länkar med hjälp av CSS metoderna vi gått igenom
+    på lektionen och bygga en egen drop-down meny.
+
+> **Nedan val kan ni välja mellan att använda BEM metoden eller
+> Bootstrap. Bara en metod behövs för att nå VG:**
+
+-   Skriva er html och css kod enligt BEM metoden.
+
+-   Bygg er sida med hjälp av Bootstrap.
+
+> **Inlämning:**
+>
+> Ni ska spara er kod på GitHub och vid inlämning skicka länken till ert
+> repository på GitHub. **Eran zip-fil lämnar ni in på ping-pong!**
+>
+> **Tips!**
+>
+> Detta är ett bra exempel som visar på hur det går att använda flex box
+> för att få till en snygg portfolio sida
+> [<u>https://reshma-dhuldhule.netlify.app/</u>](https://reshma-dhuldhule.netlify.app/)
