@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patrik Larsson</title>
-    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <!-- Importera stylesheet från font awesome. Innehåller bland annat ikoner
          för brands. T.ex. Twitter,Linkedin och Github -->
     <link
@@ -13,87 +18,112 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="main.css" />
   </head>
   <body>
     <header>
-      <div class="container">
-        <nav class="main-nav">
-          <ul class="main-nav__items">
-            <li class="main-nav__item">
-              <a class="main-nav__link main-nav__link--active" href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="contact.html">Contact</a>
-            </li>
-          </ul>
+      <div class="container-fluid">
+        <nav class="navbar">
+          <div class="row">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
     <main>
-      <div class="container">
-        <section class="home-intro">
-          <div class="home-intro__img"></div>
-        </section>
-        <section class="home-about">
-          <div class="home-about__img"></div>
-          <div class="home-about__content">
-            <h1 class="home-about__heading">About me</h1>
-            <p class="home-about__text">
-              Hi my name is Patrik. I'm located in Malmö, Sweden. I am a
-              Front-End developer student at EC-Utbilding in Helsingborg. I
-              started the education October 2020 and will be finished summer
-              2022. When I'm not studying I like to play golf, play video games
-              and watch football. Something new I would like to learn is to brew
-              ale.
-            </p>
-          </div>
-        </section>
+      <div class="jumbotron jumbotron-fluid header-img">
+        <div class="container text-light">
+          <h1 class="display-4">Patrik Larsson</h1>
+          <p class="lead">Front-End Developer Student</p>
+        </div>
       </div>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <img
+                src="img/profile.jpeg"
+                alt="A very beautiful portrait of me"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col">
+              <h1>About me</h1>
+              <p>
+                Hi my name is Patrik. I'm located in Malmö, Sweden. I am a
+                Front-End developer student at EC-Utbilding in Helsingborg. I
+                started the education October 2020 and will be finished summer
+                2022. When I'm not studying I like to play golf, play video
+                games and watch football. Something new I would like to learn is
+                to brew ale.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <nav class="footer-nav">
-          <ul class="footer-nav__items">
-            <li class="footer-nav__item">
-              <a
-                class="footer-nav__link footer-nav__link--active"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="footer-nav__item">
-              <a class="footer-nav__link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-          <ul class="footer-nav__social-items">
-            <li>
-              <a class="footer-nav__link" href="https://github.com/pattenp"
-                ><i class="fa fa-github-square fa-2x"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                class="footer-nav__link"
-                href="https://www.linkedin.com/in/patrik-larsson-67a767163/"
-                ><i class="fa fa-linkedin-square fa-2x"></i
-              ></a>
-            </li>
-            <li>
-              <a class="footer-nav__link" href="https://twitter.com/patten_p"
-                ><i class="fa fa-twitter-square fa-2x"></i
-              ></a>
-            </li>
-          </ul>
+    <footer class="bg-dark fixed-bottom">
+      <div class="container-fluid">
+        <nav class="navbar">
+          <div class="col">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="nav">
+              <li class="nav-item">
+                <a href="https://github.com/pattenp"
+                  ><i class="fa fa-github-square"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.linkedin.com/in/patrik-larsson-67a767163/"
+                  ><i class="fa fa-linkedin-square"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://twitter.com/pattenp"
+                  ><i class="fa fa-twitter-square"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
