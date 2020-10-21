@@ -10,8 +10,6 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <!-- Importera stylesheet från font awesome. Innehåller bland annat ikoner
-         för brands. T.ex. Twitter,Linkedin och Github -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -23,9 +21,17 @@
   <body>
     <header>
       <div class="container">
-        <nav class="navbar">
-          <div class="row">
-            <ul class="nav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a href="index.html" class="nav-link">Home</a>
               </li>
@@ -52,14 +58,14 @@
       <section>
         <div class="container">
           <div class="row">
-            <div class="col-8">
+            <div class="col-sm-12">
               <img
                 src="img/profile.jpeg"
                 alt="A very beautiful portrait of me"
-                class="img-fluid"
+                class="img-fluid w-100"
               />
             </div>
-            <div class="col-4">
+            <div class="col-sm-12">
               <h1>About me</h1>
               <p>
                 Hi my name is Patrik. I'm located in Malmö, Sweden. I am a
@@ -74,43 +80,37 @@
         </div>
       </section>
     </main>
-    <footer class="bg-dark fixed-bottom">
-      <div class="container">
-        <nav class="navbar">
-          <div class="col">
-            <ul class="nav">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="portfolio.html" class="nav-link">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col">
-            <ul class="nav">
-              <li class="nav-item">
-                <a href="https://github.com/pattenp"
-                  ><i class="fa fa-github-square"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a href="https://www.linkedin.com/in/patrik-larsson-67a767163/"
-                  ><i class="fa fa-linkedin-square"></i
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a href="https://twitter.com/pattenp"
-                  ><i class="fa fa-twitter-square"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+    <footer class="bg-dark">
+      <nav class="navbar">
+        <ul class="nav flex-column align-items-center flex-fill">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="https://github.com/pattenp"
+                ><i class="fa fa-github-square"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.linkedin.com/in/patrik-larsson-67a767163/"
+                ><i class="fa fa-linkedin-square"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a href="https://twitter.com/pattenp"
+                ><i class="fa fa-twitter-square"></i
+              ></a>
+            </li>
+          </ul>
+        </ul>
+      </nav>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
