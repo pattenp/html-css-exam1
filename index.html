@@ -18,107 +18,129 @@
     />
     <link rel="stylesheet" href="main.css" />
   </head>
-  <body>
-    <header>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light pr-0">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-lg-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link active">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="portfolio.html" class="nav-link">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <div class="jumbotron header-img">
-          <div class="container text-light">
-            <h1 class="display-4">Patrik Larsson</h1>
-            <p class="lead">Front-End Developer Student</p>
-          </div>
-        </div>
-      </div>
-      <section>
+  <body class="d-flex flex-column min-vh-100 bg-light">
+    <div class="flex-grow-1">
+      <header>
         <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-lg-6">
-              <img
-                src="img/profile.jpeg"
-                alt="A very beautiful portrait of me"
-                class="img-fluid w-100"
-              />
+          <nav class="navbar navbar-expand-lg navbar-light pr-0 pl-0">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              v
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-lg-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link text-uppercase active"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="portfolio.html" class="nav-link text-uppercase"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="contact.html" class="nav-link text-uppercase"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
             </div>
-            <div class="col-sm-12 col-lg-6">
-              <h2>About me</h2>
-              <p>
-                Hi my name is Patrik. I'm located in Malmö, Sweden. I am a
-                Front-End developer student at EC-Utbilding in Helsingborg. I
-                started the educatidoon October 2020 and will be finished summer
-                2022. When I'm not studying I like to play golf, play video
-                games and watch football. Something new I would like to learn is
-                to brew ale.
-              </p>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class="container">
+          <div class="jumbotron header-img">
+            <div class="container text-light">
+              <h1 class="display-4">Patrik Larsson</h1>
+              <p class="lead">Front-End Developer Student</p>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="bg-dark">
-      <nav class="nav-bar">
+        <section>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-lg-6">
+                <img
+                  src="img/profile.jpeg"
+                  alt="A very beautiful portrait of me"
+                  class="img-fluid w-100"
+                />
+              </div>
+              <div class="col-sm-12 col-lg-6 mt-3 mt-lg-0">
+                <h2>About me</h2>
+                <p>
+                  Hi my name is Patrik. I'm located in Malmö, Sweden. I am a
+                  Front-End developer student at EC-Utbilding in Helsingborg. I
+                  started the educatidoon October 2020 and will be finished
+                  summer 2022. When I'm not studying I like to play golf, play
+                  video games and watch football. Something new I would like to
+                  learn is to brew ale.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="bg-dark mt-4">
+      <nav class="nav">
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-8">
-              <div class="nav">
+              <div class="nav flex-column flex-lg-row align-items-center h-100">
                 <div class="nav-item">
-                  <a href="index.html" class="nav-link text-light">Home</a>
+                  <a
+                    href="index.html"
+                    class="nav-link text-light text-uppercase active"
+                    >Home</a
+                  >
                 </div>
                 <div class="nav-item">
-                  <a href="portfolio.html" class="nav-link text-light"
+                  <a
+                    href="portfolio.html"
+                    class="nav-link text-uppercase text-light"
                     >Portfolio</a
                   >
                 </div>
                 <div class="nav-item">
-                  <a href="contact.html" class="nav-link">Contact</a>
+                  <a
+                    href="contact.html"
+                    class="nav-link text-uppercase text-light"
+                    >Contact</a
+                  >
                 </div>
               </div>
             </div>
             <div class="col-12 col-lg-4">
               <div class="d-flex justify-content-center">
                 <div class="nav-item">
-                  <a href="htttp://github.com/pattenp" class="nav-link"
-                    ><span class="fa fa-github-square"></span
+                  <a
+                    href="https://github.com/pattenp"
+                    class="nav-link text-light"
+                    ><span class="fa fa-github-square fa-2x"></span
                   ></a>
                 </div>
                 <div class="nav-item">
                   <a
                     href="https://www.linkedin.com/in/patrik-larsson-67a767163/"
-                    class="nav-link"
-                    ><span class="fa fa-linkedin-square"></span
+                    class="nav-link text-light"
+                    ><span class="fa fa-linkedin-square fa-2x"></span
                   ></a>
                 </div>
                 <div class="nav-item">
-                  <a href="htttp://twitter.com/pattenp" class="nav-link"
-                    ><span class="fa fa-twitter-square"></span
+                  <a
+                    href="https://twitter.com/patten_p"
+                    class="nav-link text-light"
+                    ><span class="fa fa-twitter-square fa-2x"></span
                   ></a>
                 </div>
               </div>
