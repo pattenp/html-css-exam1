@@ -2,3 +2,8 @@
   background-size: cover;
   background-image: url("img/header.jpg");
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
