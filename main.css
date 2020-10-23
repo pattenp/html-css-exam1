@@ -1,9 +1,16 @@
+/* index.html */
 .header-img {
   background-size: cover;
   background-image: url("img/header.jpg");
 }
 
+/* portfolio.html */
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
+}
+
+/* Components and Utilites */
+.active {
+  color: #008b72 !important;
 }
